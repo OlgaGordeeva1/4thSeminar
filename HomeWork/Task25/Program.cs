@@ -3,5 +3,15 @@
 // Еще раз зафиксируем: нужно написать именно ЦИКЛ, а не метод Math.Pow
 
 // 3, 5 -> 243 (3⁵)
-
 // 2, 4 -> 16
+
+int Step(int A, int B)
+{
+    int result = 1;
+    for (int i = 1; i<= B; i++)
+    {result = result*A;}
+    return result;
+}
+
+Console.WriteLine(Step(3,5));
+
